@@ -1,0 +1,41 @@
+
+.method public setBackButtonEnable(ZZ)V
+    .locals 0
+    .parameter "enable"
+    .parameter "addBackButton"
+
+    .prologue
+    return-void
+.end method
+
+.method public setMenu(Landroid/view/View;)V
+    .locals 0
+    .parameter "menu"
+
+    .prologue
+    return-void
+.end method
+
+.method public setBackButtonDrawable(Landroid/graphics/drawable/Drawable;)V
+    .locals 1
+    .parameter "backIcon"
+
+    .prologue
+    return-void
+.end method
+
+.method public setHeight(I)V
+    .locals 0
+    .parameter "height"
+
+    .prologue
+
+    return-void
+.end method
+
+.method public onSmartBarConfigurationChanged()V
+    .locals 0
+
+    .prologue
+    return-void
+.end method

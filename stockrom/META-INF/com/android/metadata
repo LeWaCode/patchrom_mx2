@@ -1,0 +1,3 @@
+post-build=Meizu/meizu_mx2/mx2:4.2.1/JOP40D/m04x.Flyme_OS_3.5.1.1395917922:user/release-keys
+post-timestamp=1395918140
+pre-device=mx2

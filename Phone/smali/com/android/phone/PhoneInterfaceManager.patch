@@ -1,0 +1,41 @@
+From 6e9a99c7f321d7cfc4244c0429c9e34a21608005 Mon Sep 17 00:00:00 2001
+From: jiangjiawen <jwjiang@lewatek.com>
+Date: Tue, 15 Apr 2014 20:38:15 +0800
+Subject: [PATCH] PhoneInterfaceManager.patch
+
+---
+ Phone/smali/com/android/phone/PhoneInterfaceManager.smali | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+diff --git a/Phone/smali/com/android/phone/PhoneInterfaceManager.smali b/Phone/smali/com/android/phone/PhoneInterfaceManager.smali
+index 8988b14..c1984e5 100644
+--- a/Phone/smali/com/android/phone/PhoneInterfaceManager.smali
++++ b/Phone/smali/com/android/phone/PhoneInterfaceManager.smali
+@@ -39,6 +39,8 @@
+ # instance fields
+ .field mApp:Lcom/android/phone/PhoneGlobals;
+ 
++.field mAppOps:Landroid/app/AppOpsManager;
++
+ .field mCM:Lcom/android/internal/telephony/CallManager;
+ 
+ .field mMainThreadHandler:Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;
+@@ -71,6 +73,16 @@
+ 
+     iput-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mCM:Lcom/android/internal/telephony/CallManager;
+ 
++    const-string v0, "appops"
++
++    invoke-virtual {p1, v0}, Landroid/content/ContextWrapper;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
++
++    move-result-object v0
++
++    check-cast v0, Landroid/app/AppOpsManager;
++
++    iput-object v0, p0, Lcom/android/phone/PhoneInterfaceManager;->mAppOps:Landroid/app/AppOpsManager;
++
+     new-instance v0, Lcom/android/phone/PhoneInterfaceManager$MainThreadHandler;
+ 
+-- 
+1.8.3.2
+

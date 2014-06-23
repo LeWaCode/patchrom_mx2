@@ -1,0 +1,71 @@
+
+.method public setNavButtonVisible(Z)V
+    .locals 0
+    .parameter "visible"
+
+    .prologue
+    return-void
+.end method
+
+.method public showStatusbarInFullScreen(Z)V
+    .locals 0
+    .parameter "show"
+
+    .prologue
+    return-void
+.end method
+
+.method public updateStatusbarPos(Landroid/view/MotionEvent;)V
+    .locals 0
+    .parameter "event"
+
+    .prologue
+    return-void
+.end method
+
+.method public requestStatusBarShot(Landroid/os/ParcelFileDescriptor;ILandroid/app/IUnlockScreenShotReceiver;)V
+    .locals 0
+    .parameter "fd"
+    .parameter "type"
+    .parameter "receiver"
+
+    .prologue
+    return-void
+.end method
+
+.method public updateKeyguardStatusBar(Z)V
+    .locals 0
+    .parameter "isKeyguardShow"
+
+    .prologue
+    return-void
+.end method
+
+.method public updateRecentPanel(Landroid/view/MotionEvent;ZZ)V
+    .locals 5
+    .parameter "event"
+    .parameter "waitGestureBack"
+    .parameter "hasGestureBack"
+
+    .prologue
+    return-void
+.end method
+
+.method public setStatusBarBackgroundTransparent(ZZ)V
+    .locals 5
+    .parameter "transparent"
+    .parameter "animate"
+
+    .prologue
+    return-void
+.end method
+
+.method public toggleHomeKey(Landroid/view/KeyEvent;ZZ)V
+    .locals 5
+    .parameter "event"
+    .parameter "longPress"
+    .parameter "doubleClick"
+
+    .prologue
+    return-void
+.end method
