@@ -17,7 +17,7 @@ local-modified-apps :=
 local-modified-jars :=
 
 # All apks from LEWA
-local-lewa-removed-apps := SettingsProvider MediaProvider Bluetooth
+local-lewa-removed-apps := SettingsProvider Bluetooth
 
 local-lewa-modified-apps := SystemUI Phone
 
@@ -70,5 +70,3 @@ local-pre-zip-misc: add-prebuilt-lewa-sqlite-library
 	cp -f other/bootanimation $(ZIP_DIR)/system/bin
 	@echo replace LiveWallpapersPicker
 	cp -f other/LiveWallpapersPicker.apk $(ZIP_DIR)/system/app
-	cp -f other/MediaProvider.apk $(ZIP_DIR)/system/app
-	cp -f other/Gallery2.apk $(ZIP_DIR)/system/app
