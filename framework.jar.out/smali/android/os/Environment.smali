@@ -199,7 +199,7 @@
 
     if-eqz v0, :cond_0
 
-    const-string v0, "VirtualSD/Alarms"
+    const-string v0, "Alarms"
 
     :goto_0
     sput-object v0, Landroid/os/Environment;->DIRECTORY_ALARMS:Ljava/lang/String;
@@ -211,7 +211,7 @@
 
     if-eqz v0, :cond_1
 
-    const-string v0, "VirtualSD/Notifications"
+    const-string v0, "Notifications"
 
     :goto_1
     sput-object v0, Landroid/os/Environment;->DIRECTORY_NOTIFICATIONS:Ljava/lang/String;
@@ -222,7 +222,7 @@
     sput-object v0, Landroid/os/Environment;->DIRECTORY_PICTURES:Ljava/lang/String;
 
     .line 496
-    const-string v0, "Video"
+    const-string v0, "Movies"
 
     sput-object v0, Landroid/os/Environment;->DIRECTORY_MOVIES:Ljava/lang/String;
 
@@ -232,7 +232,7 @@
     sput-object v0, Landroid/os/Environment;->DIRECTORY_DOWNLOADS:Ljava/lang/String;
 
     .line 513
-    const-string v0, "Camera"
+    const-string v0, "DCIM"
 
     sput-object v0, Landroid/os/Environment;->DIRECTORY_DCIM:Ljava/lang/String;
 
