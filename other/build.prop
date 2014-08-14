@@ -93,3 +93,4 @@ ro.meizu.has_smartbar=true
 dalvik.vm.dexopt-flags=m=y
 net.bt.name=Android
 dalvik.vm.stack-trace-file=/data/anr/traces.txt
+persist.sys.sd.defaultpath=/storage/emulated/0
