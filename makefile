@@ -69,12 +69,6 @@ local-pre-zip-misc: add-prebuilt-lewa-sqlite-library
 	@echo replace bootanimation
 	cp -f other/bootanimation $(ZIP_DIR)/system/bin
 	@echo replace LiveWallpapersPicker
-	cp -f other/MeiKa/MeikaCam.apk $(ZIP_DIR)/system/app
-	cp -f other/MeiKa/lib/libAppSecret.so $(ZIP_DIR)/system/lib
-	cp -f other/MeiKa/lib/libarcplatform.so $(ZIP_DIR)/system/lib
-	cp -f other/MeiKa/lib/libbspatch.so $(ZIP_DIR)/system/lib
-	cp -f other/MeiKa/lib/libfacial.so $(ZIP_DIR)/system/lib
-	cp -f other/MeiKa/lib/libMeiRenFlawlessFace-v7.so $(ZIP_DIR)/system/lib
-	cp -f other/MeiKa/lib/libskinsoft.so $(ZIP_DIR)/system/lib
 	cp -f other/LiveWallpapersPicker.apk $(ZIP_DIR)/system/app
-	cp -f other/LewaCamera.apk $(ZIP_DIR)/system/app
+	cp -f other/Gallery2.apk $(ZIP_DIR)/system/app
+	cp -f other/mms-common.jar $(ZIP_DIR)/system/framework
